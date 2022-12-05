@@ -5,7 +5,7 @@ pipeline {
            steps {
                sh '''
                ls -la
-               sort -C numbers || echo -n "not " ; echo "sorted"
+               'sort -C numbers || echo -n "not " ; echo "sorted"'
                '''
            }
         }
