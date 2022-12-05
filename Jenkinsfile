@@ -4,7 +4,8 @@ pipeline {
         stage('Stage1'){
            steps {
                sh '''
-               sort -C file || echo -n "not " ; echo "sorted"
+               ls -la
+               sort -C numbers || echo -n "not " ; echo "sorted"
                '''
            }
         }
