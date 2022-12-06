@@ -5,7 +5,13 @@ pipeline {
            steps {
                sh '''
                ls -la
-               sort -C numbers
+               if sort -C file; then
+                  # return code 0
+                  echo "sorted"
+                else
+                  # return code not 0
+                  echo "not sorted"
+                fi
                '''
            }
         }
