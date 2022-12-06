@@ -12,7 +12,7 @@ pipeline {
 //                   # return code not 0
 //                   echo "not sorted"
 //                 fi
-                sort -C file || echo -n "not " ; echo "sorted"
+                sort -C numbers || echo -n "not " ; echo "sorted"
                '''
            }
         }
